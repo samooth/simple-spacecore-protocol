@@ -2,7 +2,7 @@ const Handshake = require('./lib/handshake')
 const messages = require('./messages')
 const XOR = require('./lib/xor')
 const SMC = require('simple-message-channels')
-const crypto = require('hypercore-crypto')
+const crypto = require('spacecore-crypto')
 const varint = require('varint')
 
 module.exports = class SimpleProtocol {
@@ -47,7 +47,10 @@ module.exports = class SimpleProtocol {
 
     if (handlers.encrypted !== false || handlers.noise !== false) {
       this._handshaking = true
-      if (typeof this.handlers.keyPair !== 'function') {
+      if (typeof this.handlers.keyPair === 'undefined') {
+        console.log('keyPair is undefined')
+      } else if (typeof this.handlers.keyPair !== 'function') {
+        console.log(typeof this.handlers.keyPair)
         this._onkeypair(null, this.handlers.keyPair || null)
       } else {
         this._buffering = []

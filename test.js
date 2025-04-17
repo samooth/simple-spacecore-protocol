@@ -3,7 +3,6 @@ const SHP = require('./')
 
 const key = Buffer.alloc(32).fill('key')
 const discoveryKey = Buffer.alloc(32).fill('discovery')
-
 tape('single open', function (t) {
   const a = new SHP(true, {
     send (data) {

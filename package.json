@@ -1,10 +1,10 @@
 {
-  "name": "simple-hypercore-protocol",
-  "version": "2.1.2",
-  "description": "Hypercore protocol state machine",
+  "name": "simple-spacecore-protocol",
+  "version": "0.0.1",
+  "description": "Spacecore protocol state machine",
   "main": "index.js",
-  "dependencies": {
-    "hypercore-crypto": "^2.1.0",
+"dependencies": {
+    "spacecore-crypto": "latest",
     "noise-protocol": "^3.0.1",
     "protocol-buffers-encodings": "^1.1.0",
     "simple-handshake": "^3.0.0",
@@ -23,12 +23,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mafintosh/simple-hypercore-protocol.git"
+    "url": "https://github.com/samooth/simple-spacecore-protocol.git"
   },
   "author": "Mathias Buus (@mafintosh)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mafintosh/simple-hypercore-protocol/issues"
+    "url": "https://github.com/samooth/simple-spacecore-protocol/issues"
   },
-  "homepage": "https://github.com/mafintosh/simple-hypercore-protocol"
+  "homepage": "https://github.com/samooth/simple-spacecore-protocol"
 }

@@ -1,17 +1,17 @@
-# simple-hypercore-protocol
+# simple-spacecore-protocol
 
-Hypercore protocol state machine
+Spacecore protocol state machine
 
 ```
-npm install simple-hypercore-protocol
+npm install simple-spacecore-protocol
 ```
 
-Includes a Noise handshake, and is not backwards compatible with Hypercore <= 7
+Includes a Noise handshake
 
 ## Usage
 
 ``` js
-const Protocol = require('simple-hypercore-protocol')
+const Protocol = require('simple-spacecore-protocol')
 
 const a = new Protocol(true, {
   send (data) { // send hook should send data
